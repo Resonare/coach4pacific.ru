@@ -1,0 +1,307 @@
+
+/*==============================DISPLAY-BLOCK===========================*/
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+@media (max-width: 1099px) {
+    .mobile-flex-col {
+        flex-direction: column;
+    }
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.rounded {
+    border-radius: 4px;
+}
+
+/*==============================BACKGROUND-BLOCK===========================*/
+.bg-orange {
+    background-image: url(../images/forest-transparent.png);
+    background-color: #FF7B17;
+    background-size: cover;
+    background-position: center;
+}
+
+/*==============================SIZING-BLOCK===========================*/
+.gap-5 {
+    gap: 5px;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.gap-30 {
+    gap: 30px;
+}
+
+.gap-60 {
+    gap: 60px;
+}
+
+.gap-100 {
+    gap: 100px;
+}
+
+.py-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.py-30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.py-60 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.px-100 {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.pb-30 {
+    padding-bottom: 30px;
+}
+
+.pt-30 {
+    padding-top: 30px;
+}
+
+.pl-10 {
+    padding-left: 10px;
+}
+
+.pl-20 {
+    padding-left: 20px;
+}
+
+.pl-30 {
+    padding-left: 30px;
+}
+
+.pl-60 {
+    padding-left: 60px;
+}
+
+@media (max-width: 1099px) {
+    .mobile-px-15 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/*==============================TEXT-BLOCK===========================*/
+.uppercase {
+    text-transform: uppercase;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-semibold {
+    font-weight: 600;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.hover-underline {
+    text-decoration: underline;
+    text-decoration-color: transparent;
+}
+
+.hover-underline:hover {
+    text-decoration: underline;
+    text-decoration-color: #3E3E3E;
+}
+
+.text-nav {
+    color: #727272;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 15px;
+    line-height: 15px;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.text-sm {
+    color: #727272;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.text-md {
+    color: #3E3E3E;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 600;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.text-lg {
+    color: #3E3E3E;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 32px;
+    line-height: 32px;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.text-xl {
+    color: #3E3E3E;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 40px;
+    line-height: 40px;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.text-blue {
+    color: #3f7ec2;
+}
+
+/*==============================ANIMATIONS-BLOCK===========================*/
+.animation-bounce-down {
+    animation: bounce-down 1.2s ease-in-out infinite;
+}
+
+@keyframes bounce-down {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(8px);
+    }
+}
+
+/*==============================MISC-BLOCK===========================*/
+.nav-underline {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: #ff8223;
+}
+
+.is-scrolling .nav-underline {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: transparent;
+}
+
+.nav.navbar-nav.navbar-right a:hover,
+.is-scrolling .nav.navbar-nav.navbar-right a:hover
+{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: #FFFFFF;
+}
+
+/*==============================STEPLIST-BLOCK===========================*/
+.steplist-new>ol {
+    list-style-type: none;
+    padding: 0;
+    --circle-radius: 8px;
+}
+
+.steplist-new>ol li::before,
+.steplist-new>ol:after
+{
+    background-color: #ccc;
+    border-radius: 50%;
+    content: "";
+    position: absolute;
+    height: calc(2 * var(--circle-radius));
+    width: calc(2 * var(--circle-radius));
+    left: 0;
+}
+
+.steplist-new>ol li::before {
+    transform: translate(-50%, 40%);
+}
+
+.steplist-new>ol:after {
+    top: 100%;
+    transform: translate(50%, 40%);
+
+}
+
+.steplist-new>ol li {
+    padding: 0 calc(14px + var(--circle-radius)) 0;
+    position: relative;
+}
+
+.steplist-new>div {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid #ccc;
+    transform: translate(-1px, 2%);
+}
+
+.steplist-new-last {
+    padding-left: 24px;
+}
